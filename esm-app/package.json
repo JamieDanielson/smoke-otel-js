@@ -1,0 +1,19 @@
+{
+  "name": "esm-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc --build tsconfig.esm.json",
+    "clean": "tsc --build --clean tsconfig.esm.json",
+    "rimraf": "rm -rf ./build && rm -rf ./node_modules",
+    "start": "node --trace-deprecation ./build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@opentelemetry/core": "file:../../../opentelemetry-js/packages/opentelemetry-core"
+  }
+}

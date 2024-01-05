@@ -1,0 +1,19 @@
+{
+  "name": "cjs-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc --build tsconfig.json",
+    "clean": "tsc --build --clean tsconfig.json",
+    "rimraf": "rm -rf ./build && rm -rf ./node_modules",
+    "start": "node ./build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@opentelemetry/core": "file:../../../opentelemetry-js/packages/opentelemetry-core"
+  }
+}

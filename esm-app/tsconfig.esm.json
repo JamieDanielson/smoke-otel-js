@@ -1,0 +1,9 @@
+{
+  "extends": "../tsconfig.esm.json",
+  "compilerOptions": {
+    /* Modules */
+    "rootDir": "./" /* Specify the root folder within your source files. */,
+    /* Emit */
+    "outDir": "./build" /* Specify an output folder for all emitted files. */
+  }
+}
